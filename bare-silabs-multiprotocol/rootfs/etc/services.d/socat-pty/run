@@ -1,0 +1,10 @@
+#!/bin/bash
+# ==============================================================================
+# Start socat PTY emulation
+# ==============================================================================
+echo "Starting socat PTY instance..."
+
+exec s6-notifyoncheck -s 300 -w 300 \
+     "/usr/bin/socat" ${SOCAT_OPTIONS} \
+         pty,raw,echo=0,link=/tmp/ttyZigbeeNCPClient,ignoreeof \
+         pty,raw,echo=0,link=/tmp/ttyZigbeeNCP,ignoreeof

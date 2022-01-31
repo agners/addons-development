@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Start EmberZNet Zigbee Daemon
+# ==============================================================================
+set -e
+s6-svwait -U /var/run/s6/services/cpcd
+s6-svwait -U /var/run/s6/services/socat-pty
+
+mkdir -p /data/zigbeed && cd /data/zigbeed
+
+echo "Starting zigbeed..."
+exec "/usr/bin/stdbuf" -o0 /usr/local/bin/zigbeed
