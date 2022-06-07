@@ -2,7 +2,13 @@
 
 ## Installation
 
-Follow these steps to get the add-on installed on your system:
+[![Open your Home Assistant instance and show the dashboard of a Supervisor
+add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=chip_tool&repository_url=https%3A%2F%2Fgithub.com%2Fhome-assistant%2Faddons-development)
+
+[![Open your Home Assistant instance and show the dashboard of a Supervisor
+add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=remote_debug&repository_url=https%3A%2F%2Fgithub.com%2Fhome-assistant%2Faddons-development)
+
+
 
 1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons, Backup & Supervisor** -> **Add-on Store**.
 2. Click on the top right menu and "Repository"
